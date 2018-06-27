@@ -150,7 +150,7 @@ npm run dev
 ## 捐赠 Donate
 如果我的项目对你有帮助，可以请我喝杯~~咖啡~~ 肥宅快乐水哦~🐷
 ### 支付宝，微信支付
-<img src="https://github.com/yllg/xbyjMusic/blob/master/screenshots/15.%E6%94%AF%E4%BB%98%E5%AE%9D%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg" width="200" height="312"/> <img src="https://github.com/yllg/xbyjMusic/blob/master/screenshots/16.%E5%BE%AE%E4%BF%A1%E6%94%AF%E4%BB%98%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg" width="200" height="312"/>
+<img src="https://github.com/yllg/xbyjMusic/blob/master/screenshots/15.%E6%94%AF%E4%BB%98%E5%AE%9D.jpg" width="200" height="312"/> <img src="https://github.com/yllg/xbyjMusic/blob/master/screenshots/16.%E5%BE%AE%E4%BF%A1%E6%94%AF%E4%BB%98.png" width="200" height="312"/>
 
 
 
