@@ -1,0 +1,157 @@
+{
+  "name": "xbyj-music",
+  "version": "1.0.0",
+  "description": "高仿网易云音乐 扩平台桌面客户端",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "node node_modules/.bin/eslint .",
+    "build-main": "cross-env NODE_ENV=production node -r babel-register ./node_modules/webpack/bin/webpack --config ./config/webpack.config.electron.js --progress --profile --colors",
+    "build-renderer": "cross-env NODE_ENV=production node -r babel-register ./node_modules/webpack/bin/webpack --config ./config/webpack.config.production.js --progress --profile --colors",
+    "build": "rm -rf dist && npm run build-main && npm run build-renderer",
+    "api": "cross-env NODE_ENV=development AUTORUN=1 DEBUG_COLORS=true DEBUG=dev:*,-not_this node -r babel-register server/api.js",
+    "hot-server": "cross-env NODE_ENV=development DEBUG_COLORS=true DEBUG=dev:*,-not_this node -r babel-register server/dev.js",
+    "start-hot": "cross-env HOT=1 NODE_ENV=development DEBUG_COLORS=true DEBUG=dev:*,-not_this ./node_modules/.bin/electron -r babel-register -r babel-polyfill ./main",
+    "package-mac": "npm run build && rm -rf release && build --mac --projectDir ./dist",
+    "package-linux": "npm run build && rm -rf release && build --linux --projectDir ./dist",
+    "package-win": "npm run build && rm -rf release && build --win --ia32 --projectDir ./dist",
+    "dev": "concurrently --kill-others \"npm run hot-server\" \"npm run start-hot\"",
+    "dd": "electron-builder --win --ia32 --projectDir ./dist"
+  },
+  "author": {
+    "name": "yllg",
+    "email": "1565550208@qq.com",
+    "url": "https://www.xuanbiyijue.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yllg/xbyjMusic.git"
+  },
+  "build": {
+    "productName": "xbyjMusic",
+    "appId": "yllg.xbyjMusic",
+    "compression": "maximum",
+    "artifactName": "${productName}-${version}-${os}-${arch}.${ext}",
+    "dmg": {
+      "contents": [
+        {
+          "x": 130,
+          "y": 220
+        },
+        {
+          "x": 410,
+          "y": 220,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ],
+      "title": "xbyjMusic ${version}"
+    },
+    "mac": {
+      "icon": "../resource/dock.icns"
+    },
+    "linux": {
+      "target": [
+        "deb",
+        "rpm",
+        "AppImage"
+      ],
+      "icon": "../resource",
+      "category": "Music"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "../resource/xbyjMusic.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": true
+    },
+    "directories": {
+      "output": "../release"
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "yllg",
+        "repo": "xbyjMusic"
+      }
+    ]
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.3",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-react-hmre": "^1.1.1",
+    "babel-preset-react-optimize": "^1.0.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "concurrently": "^3.5.0",
+    "copy-webpack-plugin": "^4.0.1",
+    "cross-env": "^5.0.5",
+    "css-loader": "^0.28.4",
+    "electron": "^1.7.6",
+    "electron-builder": "^19.49.0",
+    "eslint": "^4.13.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-config-standard-react": "^5.0.0",
+    "eslint-formatter-pretty": "^1.3.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.5.1",
+    "eslint-plugin-standard": "^3.0.1",
+    "express": "^4.15.4",
+    "html-loader": "^0.5.1",
+    "html-webpack-plugin": "^2.30.1",
+    "json-loader": "^0.5.7",
+    "style-loader": "^0.18.2",
+    "svg-inline-loader": "^0.8.0",
+    "uglifyjs-webpack-plugin": "^1.1.8",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.10.0",
+    "webpack-dev-middleware": "^1.12.0",
+    "webpack-hot-middleware": "^2.21.0",
+    "webpack-sources": "^1.1.0"
+  },
+  "dependencies": {
+    "apicache": "^1.2.0",
+    "axios": "^0.17.1",
+    "big-integer": "^1.6.25",
+    "classname": "0.0.0",
+    "cookie-parser": "^1.4.3",
+    "debug": "^3.0.1",
+    "delegate": "^3.1.3",
+    "electron-json-storage": "^4.0.2",
+    "electron-updater": "^2.18.2",
+    "electron-window-state": "^4.1.1",
+    "han": "0.0.7",
+    "ionicons201": "^1.0.0",
+    "libphonenumber-js": "^0.4.44",
+    "md5": "^2.2.1",
+    "mobx": "^3.2.2",
+    "mobx-react": "^4.2.2",
+    "moment": "^2.18.1",
+    "perdido": "^2.0.1",
+    "react": "^15.6.1",
+    "react-addons-css-transition-group": "^15.6.0",
+    "react-dom": "^15.6.1",
+    "react-jss": "^7.1.0",
+    "react-router": "^3.0.5",
+    "react-scroll-horizontal": "github:trazyn/react-scroll-horizontal#gh-pages",
+    "react-slick": "^0.23.1",
+    "request": "^2.81.0",
+    "request-promise-native": "^1.0.5",
+    "simple-lastfm": "^1.0.5",
+    "slick-carousel": "^1.8.1"
+  }
+}
