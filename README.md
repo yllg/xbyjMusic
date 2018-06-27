@@ -143,12 +143,12 @@ npm run dev
 
 # 最后
 
-## 欢迎关注我的公众号，还有个技术交流群(备注自己github账号哦)
+### 欢迎关注我的公众号，还有个技术交流群(备注自己github账号哦)
 ### 公众号，微信群
-<img src="https://github.com/yllg/xbyjMusic/blob/master/screenshots/13.%E5%85%AC%E4%BC%97%E5%8F%B7.jpg" width="200" height="200"/> <img src="https://github.com/yllg/xbyjMusic/blob/master/screenshots/14.%E5%BE%AE%E4%BF%A1%E7%BE%A4.png" width="200" height="312"/>
+<img src="https://github.com/yllg/xbyjMusic/blob/master/screenshots/13.%E5%85%AC%E4%BC%97%E5%8F%B7.jpg" width="200" height="200"/> <img src="https://github.com/yllg/xbyjMusic/blob/master/screenshots/14.%E5%BE%AE%E4%BF%A1%E7%BE%A4.png" width="250" height="312"/>
 
 ## 捐赠 Donate
-如果我的项目对你有帮助，可以请我喝杯~~咖啡~~ 肥宅快乐水哦~
+如果我的项目对你有帮助，可以请我喝杯~~咖啡~~ 肥宅快乐水哦~🐷
 ### 支付宝，微信支付
 <img src="https://github.com/yllg/xbyjMusic/blob/master/screenshots/15.%E6%94%AF%E4%BB%98%E5%AE%9D%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg" width="200" height="312"/> <img src="https://github.com/yllg/xbyjMusic/blob/master/screenshots/16.%E5%BE%AE%E4%BF%A1%E6%94%AF%E4%BB%98%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg" width="200" height="312"/>
 
