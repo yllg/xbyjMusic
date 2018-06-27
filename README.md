@@ -3,7 +3,7 @@
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
 [![GitHub license](https://img.shields.io/badge/license-GPL-blue.svg)]()
 
-<img src="https://github.com/yllg/xbyjMusic/blob/master/resource/64x64.png" />
+<img src="https://github.com/yllg/xbyjMusic/blob/master/resource/64x64.png" width="64" height="64"/>
 
 > 跨平台 NeteaseMusic 桌面应用
 
@@ -95,6 +95,35 @@ npm run dev
 ### 每日推荐
 <img src="https://github.com/yllg/xbyjMusic/blob/master/screenshots/2.%E6%AF%8F%E6%97%A5%E6%8E%A8%E8%8D%90.png" /> 
 
+### 私人FM
+<img src="https://github.com/yllg/xbyjMusic/blob/master/screenshots/3.%E7%A7%81%E4%BA%BAFM.png" /> 
+
+### 歌曲页
+<img src="https://github.com/yllg/xbyjMusic/blob/master/screenshots/4.%E6%AD%8C%E6%9B%B2%E9%A1%B5.gif" /> 
+
+### 歌单页
+<img src="https://github.com/yllg/xbyjMusic/blob/master/screenshots/5.%E6%AD%8C%E5%8D%95%E9%A1%B5.gif" /> 
+
+### 歌手页
+<img src="https://github.com/yllg/xbyjMusic/blob/master/screenshots/6.%E6%AD%8C%E6%89%8B%E9%A1%B5.gif" /> 
+
+### 用户页
+<img src="https://github.com/yllg/xbyjMusic/blob/master/screenshots/7.%E7%94%A8%E6%88%B7%E9%A1%B5.png" /> 
+
+### 加载
+<img src="https://github.com/yllg/xbyjMusic/blob/master/screenshots/8.%E5%8A%A0%E8%BD%BD%E9%A1%B5.png" /> 
+
+### 排行榜
+<img src="https://github.com/yllg/xbyjMusic/blob/master/screenshots/9.%E6%8E%92%E8%A1%8C%E6%A6%9C.png" /> 
+
+### 歌单主页
+<img src="https://github.com/yllg/xbyjMusic/blob/master/screenshots/10.%E6%AD%8C%E5%8D%95%E4%B8%BB%E9%A1%B5.png" /> 
+
+### 搜索页
+<img src="https://github.com/yllg/xbyjMusic/blob/master/screenshots/11.%E6%90%9C%E7%B4%A2%E9%A1%B5.png" /> 
+
+### 偏好设置/首选项
+<img src="https://github.com/yllg/xbyjMusic/blob/master/screenshots/12.%E5%81%8F%E5%A5%BD%E8%AE%BE%E7%BD%AE.png" /> 
 
 
 
@@ -114,17 +143,17 @@ npm run dev
 
 # 最后
 
-1、欢迎关注我的公众号，还有个技术交流群(备注自己github账号哦)
-## 公众号，微信群
-<img src="https://github.com/yllg/xbyjMusic/blob/master/screenshots/2.%E6%AF%8F%E6%97%A5%E6%8E%A8%E8%8D%90.png" width="365" height="619"/> <img src="https://github.com/yllg/xbyjMusic/blob/master/screenshots/14.%E5%BE%AE%E4%BF%A1%E7%BE%A4.png" width="365" height="619"/>
+## 欢迎关注我的公众号，还有个技术交流群(备注自己github账号哦)
+### 公众号，微信群
+<img src="https://github.com/yllg/xbyjMusic/blob/master/screenshots/13.%E5%85%AC%E4%BC%97%E5%8F%B7.jpg" width="200" height="200"/> <img src="https://github.com/yllg/xbyjMusic/blob/master/screenshots/14.%E5%BE%AE%E4%BF%A1%E7%BE%A4.png" width="200" height="312"/>
 
-2、捐赠 Donate
+## 捐赠 Donate
 如果我的项目对你有帮助，可以请我喝杯~~咖啡~~ 肥宅快乐水哦~
-## 支付宝，微信支付
-<img src="https://github.com/yllg/xbyjMusic/blob/master/screenshots/15.%E6%94%AF%E4%BB%98%E5%AE%9D%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg" width="365" height="619"/> <img src="https://github.com/yllg/xbyjMusic/blob/master/screenshots/16.%E5%BE%AE%E4%BF%A1%E6%94%AF%E4%BB%98%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg" width="365" height="619"/>
+### 支付宝，微信支付
+<img src="https://github.com/yllg/xbyjMusic/blob/master/screenshots/15.%E6%94%AF%E4%BB%98%E5%AE%9D%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg" width="200" height="312"/> <img src="https://github.com/yllg/xbyjMusic/blob/master/screenshots/16.%E5%BE%AE%E4%BF%A1%E6%94%AF%E4%BB%98%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg" width="200" height="312"/>
 
 
 
-# License
+## License
 GPL
 
